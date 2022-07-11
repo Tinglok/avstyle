@@ -27,7 +27,7 @@ In ECCV 2022
 - Python 3
 - NVIDIA GPU + CUDA CuDNN
 
-### Quick Start
+## Quick Start
 
 - Clone this repo:
 
@@ -42,9 +42,9 @@ In ECCV 2022
 
   For Conda users,  you can create a new Conda environment using `conda env create -f environment.yaml`.
 
-### Dataset
+## Dataset
 
-#### Into the wild
+### Into the wild
 
 We provide Youtube ID in `dataset\Into-the-Wild\metadata.xlsx`. Please see [youtube-dl](https://github.com/ytdl-org/youtube-dl) to download the videos to `dataset/Into-the-Wild/youtube` first. 
 
@@ -65,11 +65,11 @@ to extract the corresponding images.
 
 Finally download [trainA](https://drive.google.com/file/d/1KSWhf1uVteKqtAS-2XcyA1NzEYekuCtK/view?usp=sharing) and [trainB](https://drive.google.com/file/d/1reWRstlRkXtEPP1AUFuj9T2vXCl_A6yL/view?usp=sharing) to `dataset\Into-the-Wild`.
 
-#### The Greatest Hits
+### The Greatest Hits
 
 Please follow the instruction from [Visually Indicated Sounds](https://andrewowens.com/vis/) to download this dataset.
 
-### Training and Test
+## Training and Test
 
 - Train our model on the Into the Wild dataset:
 ```bash
@@ -95,7 +95,7 @@ python test.py --dataroot ./datasets/Greatest-Hits --eval
 ```
 The test results will be saved to a html file at `./results/material/latest_train/index.html`.
 
-### Citation
+## Citation
 
 If you use this code for your research, please consider citing our [paper](https://arxiv.org/abs/2205.05072).
 
