@@ -46,37 +46,54 @@ In ECCV 2022
 
 #### Into the wild
 
-We provide Youtube ID in `dataset\Into-the-Wild\metadata.csv`. Please follow [youtube-dl](https://github.com/ytdl-org/youtube-dl) to download the videos and process them with `dataset\Into-the-Wild\process.py`.
+We provide Youtube ID in `dataset\Into-the-Wild\metadata.xlsx`. Please see [youtube-dl](https://github.com/ytdl-org/youtube-dl) to download the videos to `dataset/Into-the-Wild/youtube` first. 
+
+Then process them using:
+```bash
+python dataset\Into-the-Wild\split.py
+```
+
+so that the videos are split into 3s video clips.
+
+Then run the command:
+
+```bash
+python dataset\Into-the-Wild\video2jpg.py
+```
+
+to extract the corresponding images.
+
+Finally download [trainA](https://drive.google.com/file/d/1KSWhf1uVteKqtAS-2XcyA1NzEYekuCtK/view?usp=sharing) and [trainB](https://drive.google.com/file/d/1reWRstlRkXtEPP1AUFuj9T2vXCl_A6yL/view?usp=sharing) to `dataset\Into-the-Wild`.
 
 #### The Greatest Hits
 
-It can be downloaded from [Visually Indicated Sounds](https://andrewowens.com/vis/).
+Please follow the instruction from [Visually Indicated Sounds](https://andrewowens.com/vis/) to download this dataset.
 
 ### Training and Test
 
 - Train our model on the Into the Wild dataset:
 ```bash
-python train.py --dataroot ./datasets/hiking --name hiking
+python train.py --dataroot ./datasets/Into-the-Wild --name hiking
 ```
 The checkpoints will be stored at `./checkpoints/hiking/`.
 
 - Train our model on the Greatest Hits dataset:
 ```bash
-python train.py --dataroot ./datasets/material --name material
+python train.py --dataroot ./datasets/Greatest-Hits --name material
 ```
 The checkpoints will be stored at `./checkpoints/material/`.
 
 - Test our model on the Into the Wild dataset:
 ```bash
-python test.py --dataroot ./datasets/hiking --eval
+python test.py --dataroot ./datasets/Into-the-Wild --eval
 ```
-The test results will be saved to a html file here: ./results/hiking/latest_train/index.html.
+The test results will be saved to a html file at `./results/hiking/latest_train/index.html`.
 
 - Test our model on the Greatest Hits dataset:
 ```bash
-python test.py --dataroot ./datasets/material --eval
+python test.py --dataroot ./datasets/Greatest-Hits --eval
 ```
-The test results will be saved to a html file here: ./results/material/latest_train/index.html.
+The test results will be saved to a html file at `./results/material/latest_train/index.html`.
 
 ### Citation
 
