@@ -42,7 +42,7 @@ In ECCV 2022
 
   For Conda users,  you can create a new Conda environment using `conda env create -f environment.yaml`.
 
-## Dataset
+## Datasets
 
 ### Into the wild
 
