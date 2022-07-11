@@ -81,10 +81,10 @@ The test results will be saved to a html file here: ./results/material/latest_tr
 If you use this code for your research, please consider citing our [paper](https://arxiv.org/abs/2205.05072).
 
 ```bash
-@inproceedings{li2021cvc,
+@inproceedings{li2022learning,
   author={Tingle Li and Yichen Liu and Andrew Owens and Hang Zhao},
   title={{Learning Visual Styles from Audio-Visual Associations}},
+  booktitle={European Conference on Computer Vision (ECCV)},
   year=2022,
-  booktitle={European Conference on Computer Vision (ECCV)}
 }
 ```
