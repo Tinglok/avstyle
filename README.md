@@ -6,7 +6,7 @@
 
 <br>
 
-<img src="figs/gif_avstyle.gif" align="right" width=960>
+<img src="figs/gif_avstyle.gif" align="center" width=800>
 
 <br><br><br><br>
 
