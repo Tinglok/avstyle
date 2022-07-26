@@ -8,7 +8,7 @@
 
 <img src="figs/gif_avstyle.gif" align="center" width=800>
 
-<br><br><br>This repository contains the official codebase for [Learning Visual Styles from Audio-Visual Associations](https://arxiv.org/abs/2205.05072). We manipulate the style of an image to match a sound. After training with an unlabeled dataset of egocentric hiking videos, our model learns visual styles for a variety of ambient sounds, such as light and heavy rain, as well as physical interactions, such as footsteps. We thank Taesung and Junyan for sharing codes of [CUT](https://github.com/taesungp/contrastive-unpaired-translation).
+<br><br>This repository contains the official codebase for [Learning Visual Styles from Audio-Visual Associations](https://arxiv.org/abs/2205.05072). We manipulate the style of an image to match a sound. After training with an unlabeled dataset of egocentric hiking videos, our model learns visual styles for a variety of ambient sounds, such as light and heavy rain, as well as physical interactions, such as footsteps. We thank Taesung and Junyan for sharing codes of [CUT](https://github.com/taesungp/contrastive-unpaired-translation).
 
 
 
