@@ -46,7 +46,7 @@ We provide Youtube ID in `dataset/Into-the-Wild/metadata.xlsx`. Please see [yout
 
 Then process them using:
 ```bash
-python dataset/Into-the-Wild/split.py
+python ./dataset/Into-the-Wild/split.py
 ```
 
 so that the videos are split into 3s video clips.
@@ -54,7 +54,7 @@ so that the videos are split into 3s video clips.
 Then run the command:
 
 ```bash
-python dataset/Into-the-Wild/video2jpg.py
+python ./dataset/Into-the-Wild/video2jpg.py
 ```
 
 to extract the corresponding images.
