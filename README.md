@@ -91,6 +91,11 @@ python test.py --dataroot ./datasets/Greatest-Hits --name material --eval
 ```
 The test results will be saved to a html file at `./results/material/latest_train/index.html`.
 
+
+## Pre-trained Model 
+
+Pre-trained models on Into-the-Wild and the Greatest Hits datasets are avaliable at this [URL](https://drive.google.com/drive/folders/102QRYqbWMYLk8-uUXqRUA5ulhRezksRy?usp=share_link).
+
 ## Citation
 
 If you use this code for your research, please consider citing our [paper](https://arxiv.org/abs/2205.05072).
