@@ -1,0 +1,55 @@
+----------------- Options ---------------
+                 CUT_mode: CUT                           
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints                 
+                crop_size: 256                           
+                 dataroot: placeholder                   
+             dataset_mode: fixed                         	[default: unaligned]
+                direction: AtoB                          
+          display_winsize: 256                           
+               easy_label: experiment_name               
+                    epoch: latest                        
+                     eval: True                          	[default: False]
+        flip_equivariance: False                         
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: xavier                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_GAN: 1.0                           
+               lambda_NCE: 1.0                           
+                load_size: 256                           
+         max_dataset_size: inf                           
+                    model: cut                           
+               n_layers_D: 3                             
+                     name: material                      	[default: experiment_name]
+                    nce_T: 0.07                          
+                  nce_idt: True                          
+nce_includes_all_negatives_from_minibatch: False                         
+               nce_layers: 0,4,8,12,16                   
+                      ndf: 64                            
+                     netD: basic                         
+                     netF: mlp_sample                    
+                  netF_nc: 256                           
+                     netG: resnet_9blocks                
+                      ngf: 64                            
+             no_antialias: False                         
+          no_antialias_up: False                         
+               no_dropout: True                          
+                  no_flip: False                         
+                    normD: instance                      
+                    normG: instance                      
+              num_patches: 256                           
+                 num_test: 50                            
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+                pool_size: 0                             
+               preprocess: resize_and_crop               
+         random_scale_max: 3.0                           
+              results_dir: ./results/                    
+           serial_batches: False                         
+stylegan2_G_num_downsampling: 1                             
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
