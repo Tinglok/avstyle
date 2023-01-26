@@ -81,13 +81,13 @@ The checkpoints will be stored at `./checkpoints/material/`.
 
 - Test our model on the Into the Wild dataset:
 ```bash
-python test.py --dataroot ./datasets/Into-the-Wild --model hiking --eval
+python test.py --dataroot ./datasets/Into-the-Wild --name hiking --eval
 ```
 The test results will be saved to a html file at `./results/hiking/latest_train/index.html`.
 
 - Test our model on the Greatest Hits dataset:
 ```bash
-python test.py --dataroot ./datasets/Greatest-Hits --model material --eval
+python test.py --dataroot ./datasets/Greatest-Hits --name material --eval
 ```
 The test results will be saved to a html file at `./results/material/latest_train/index.html`.
 
